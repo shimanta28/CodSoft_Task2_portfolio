@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<style>
+    body {
+        background-color: black;
+    }
+
+    .cardContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 100vh;
+    }
+
+    .card {
+        height: 80%;
+        width: 85%;
+        border-radius: 10px;
+        backdrop-filter: blur(50px);
+        background-color: rgba(65, 65, 65, 0.308);
+        border: 1px solid rgba(255, 255, 255, 0.089);
+    }
+    .card-1{
+        height: 300px;
+       
+        border-radius: 10px;
+        backdrop-filter: blur(50px);
+        background-color: rgba(65, 65, 65, 0.308);
+        border: 1px solid rgba(255, 255, 255, 0.089);
+
+    }
+    .intro-sec-2{
+        background-image: url();
+        height: 600px;
+        background-position: bottom;
+        background-size: cover;
+    
+
+        
+    }
+    .intro-sec{
+        padding: 20px;
+    }
+    h1{
+        position: relative;
+        z-index: 1;
+        color: brown;
+        font-size: 30px;
+        
+    }
+    .r1{
+        display: flex;
+        justify-content: center;
+        gap: 2.5rem;
+    }
+    .btn{
+        position: relative;
+        top:100%;
+        left: 25%;
+        transition: all 0.5s ease;
+        padding: 15px;
+        background-color: brown;
+        opacity: 0;
+    }
+    .card-1:hover .btn{
+        transform: translateY(-70%);
+        opacity: 1;
+        background-color: brown;
+
+    }
+    .circle{
+        height: 150px;
+        width: 150px;
+        background-color: brown;
+        position: absolute;
+        border-radius: 50%;
+        left: 20%;
+        top: 15%;
+        z-index: -4;
+        transition: all 0.5s ease;
+
+    }
+    .cardContainer:hover .circle{
+        left: 30%;
+        top: 25%;
+    }
+    
+</style>
+
+<body>
+   
+    <div class="cardContainer">
+        <div class="circle">
+
+        </div>
+        <div class="card">
+           
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 intro-sec">
+                        
+                        <div class="text">
+                            <h1 class="text-center"> Portfolio</h1>
+                        </div>
+                    </div>
+                    <div class="col-6 intro-sec-2">
+                       
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <section class="section-padding">
+        <h1 class="text-center">Projects</h1>
+        <br><br>
+        <div class="container">
+            <div class="row r1">
+                <div class="col-3 card-1">
+                    <button class="btn">Learn More</button>
+
+                </div>
+                <div class="col-3 card-1">
+                    <button class="btn">Learn More</button>
+                </div>
+                <div class="col-3 card-1">
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>
