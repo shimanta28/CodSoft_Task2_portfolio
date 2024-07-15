@@ -5,143 +5,344 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<link rel="stylesheet" href="style2.css">
 <style>
-    body {
-        background-color: black;
+    .namess {
+        font-size: 32px;
+        color: #FFF;
+        font-family: "Rubik", sans-serif !important;
     }
-
-    .cardContainer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        height: 100vh;
-    }
-
-    .card {
-        height: 80%;
-        width: 85%;
-        border-radius: 10px;
-        backdrop-filter: blur(50px);
-        background-color: rgba(65, 65, 65, 0.308);
-        border: 1px solid rgba(255, 255, 255, 0.089);
-    }
-    .card-1{
-        height: 300px;
-       
-        border-radius: 10px;
-        backdrop-filter: blur(50px);
-        background-color: rgba(65, 65, 65, 0.308);
-        border: 1px solid rgba(255, 255, 255, 0.089);
-
-    }
-    .intro-sec-2{
-        background-image: url();
-        height: 600px;
-        background-position: bottom;
-        background-size: cover;
-    
-
-        
-    }
-    .intro-sec{
-        padding: 20px;
-    }
-    h1{
-        position: relative;
-        z-index: 1;
-        color: brown;
-        font-size: 30px;
-        
-    }
-    .r1{
-        display: flex;
-        justify-content: center;
-        gap: 2.5rem;
-    }
-    .btn{
-        position: relative;
-        top:100%;
-        left: 25%;
-        transition: all 0.5s ease;
-        padding: 15px;
-        background-color: brown;
-        opacity: 0;
-    }
-    .card-1:hover .btn{
-        transform: translateY(-70%);
-        opacity: 1;
-        background-color: brown;
-
-    }
-    .circle{
-        height: 150px;
-        width: 150px;
-        background-color: brown;
-        position: absolute;
-        border-radius: 50%;
-        left: 20%;
-        top: 15%;
-        z-index: -4;
-        transition: all 0.5s ease;
-
-    }
-    .cardContainer:hover .circle{
-        left: 30%;
-        top: 25%;
-    }
-    
 </style>
 
-<body>
-   
-    <div class="cardContainer">
-        <div class="circle">
 
+<body>
+    <!-- intro page goes here -->
+    <div class="intro-page">
+        <!-- navbar goes here -->
+        <div class="navbars">
+            <ul>
+                <div class="Myname">Shiman<span style="color: #FF4C60;">.</span></div>
+                <div class="navtabs">
+                    <li class="ll">HOME</li>
+                    <li class="ll">About</li>
+                    <li class="ll">Skill</li>
+                    <li class="ll">Contacts</li>
+                </div>
+            </ul>
         </div>
-        <div class="card">
-           
-            <div class="container">
-                <div class="row">
-                    <div class="col-6 intro-sec">
-                        
-                        <div class="text">
-                            <h1 class="text-center"> Portfolio</h1>
-                        </div>
+        <!-- intro name details goes here -->
+        <section class="section-padding flexsec">
+            <div class="intro-pic">
+                <img src="https://jthemes.net/themes/wp/bolby/bolby5/wp-content/uploads/sites/5/2021/01/avatar-1-2.svg"
+                    alt="">
+                <div class="namess">Shimanta Dey</div>
+                <p class="pp1">I am a Jobless Person
+                   
+                </p>
+                
+               
+                <div class="icons">
+                    <a href="#">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-pinterest"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-spotify"></i>
+                    </a>
+
+                </div>
+                <button class="btn">
+                    Hire me
+                </button>
+
+                <div class="text-light scrl">Scroll down</div>
+
+                <div class="mouse">
+                    <div class="roll"></div>
+                    <div class="rollshadow"></div>
+                  </div>
+            </div>
+        </section>
+    </div>
+    <!-- about page goes here -->
+    <section class="section-padding about-page">
+        <div class="container con">
+            <h1 class="about-text hidden">About Me</h1>
+            <br><br>
+
+            <div class="container about-con">
+                <div>
+                    <img class="hidden" src="https://jthemes.net/themes/wp/bolby/bolby5/wp-content/uploads/sites/5/2021/01/avatar-2-1.svg"
+                        alt="">
+                </div>
+                <div class="cards hidden">
+                    <div class="p1">
+                        <h1 class="">Hello</h1>
+                         <span class="">
+                            I am Shimanta Dey, web developer from Hogwarts, United Kingdom. I have rich experience in web
+                        site
+                        design and building and customization, also I am good at WordPress
+                         </span>
+                        <br><button class="btn">Download CV</button>
                     </div>
-                    <div class="col-6 intro-sec-2">
-                       
+                    <div class="prog">
+                        <div>
+                            <h4 class="prog-text">Development</h4>
+                            <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">
+                                <div class=" progress-bar hide-prog-bar" value="1" style="  background-color:  rgb(108, 108, 229) ;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prog-text">
+                            UI/UX design
+                            <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50"
+                                aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar hide-prog-bar text-dark" value="2" style=" background-color: #FF4C60;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prog-text">
+                            Photography
+                            <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75"
+                                aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar hide-prog-bar bg-warning text-dark" value="3" ></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <br><br><br><br>
+            <div class="fact hidden">
 
+                <div class="fact-item f4 hidden">
+                    <div>
+                        <i class="bi bi-hand-thumbs-up icn"></i>
+                    </div>
+                    <div>
+                        <div class="fact-numb" data-target="500">0</div>
+                        <p class="fact-text">leet Code</p>
+                    </div>
+                </div>
+                <div class="fact-item f1 hidden">
+                    <div>
+                        <i class="bi bi-hand-thumbs-up icn"></i>
+                    </div>
+                    <div>
+                        <div class="fact-numb" data-target="198">0</div>
+                        <p class="fact-text">leet Code</p>
+                    </div>
+                </div>
+                <div class="fact-item f2 hidden">
+                    <div>
+                        <i class="bi bi-hand-thumbs-up icn"></i>
+                    </div>
+                    <div>
+                        <div class="fact-numb" data-target="5403">0</div>
+                        <p class="fact-text">leet Code</p>
+                    </div>
+                </div>
+                <div class="fact-item  f3 hidden">
+                    <div>
+                        <i class="bi bi-hand-thumbs-up icn"></i>
+                    </div>
+                    <div>
+                        <div class="fact-numb" data-target="198">0</div>
+                        <p class="fact-text">leet Code</p>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+    <!-- service page goes here -->
+    <section class="section-padding about-page">
+        <div class="container con">
+            <h1 class="about-text hidden">Services</h1><br><br>
+            <div class="serv-con">
+                <div class="serv-card sc1 text-light hidden-right">
+                    <img class="serv-img"
+                        src="https://jthemes.net/themes/wp/bolby/bolby5/wp-content/uploads/sites/5/2021/01/service-1-1.svg"
+                        alt="">
+                    <h3 class="mb-3 mt-0 text-center " style="font-size: 20px; font-weight: 700;">UI/UX design</h3>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula
+                        eget.</p>
+                </div>
+                <div class="serv-card sc2 text-dark hidden-right" style="background-color: rgb(249, 215, 76);">
+                    <img class="serv-img"
+                        src="https://jthemes.net/themes/wp/bolby/bolby5/wp-content/uploads/sites/5/2021/01/service-1-1.svg"
+                        alt="">
+                    <h3 class="mb-3 mt-0 text-center" style="font-size: 20px; font-weight: 700;">Web Development</h3>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula
+                        eget.</p>
+                </div>
+                <div class="serv-card sc3 text-light hidden-right" style="background-color: rgb(108, 108, 229); ">
+                    <img class="serv-img"
+                        src="https://jthemes.net/themes/wp/bolby/bolby5/wp-content/uploads/sites/5/2021/01/service-1-1.svg"
+                        alt="">
+                    <h3 class="mb-3 mt-0 text-center" style="font-size: 20px; font-weight: 700;">Photography</h3>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula
+                        eget.</p>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <section class="section-padding">
-        <h1 class="text-center">Projects</h1>
-        <br><br>
-        <div class="container">
-            <div class="row r1">
-                <div class="col-3 card-1">
-                    <button class="btn">Learn More</button>
-
+    </section>
+    <!-- experiencepage goea here -->
+    <section class="section-padding about-page">
+        <div class="container con">
+            <h1 class="about-text hidden"> Experience</h1><br><br>
+            <div class="e-card">
+                <div class="box ">
+                    <div class="ro">
+                        <div class="hidden">
+                            <i class="bi bi-mortarboard" style="color: #FF4C60;"></i>
+                        </div>
+                        <div class="hidden">
+                            <p>2019 - Present</p>
+                            <h5>
+                                Academic Degree
+                            </h5>
+                            <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
+                        </div>
+                    </div><br><br>
+                    <div class="ro">
+                        <div class="hidden">
+                            <i class="bi bi-mortarboard" style="color: #FF4C60;"></i>
+                        </div>
+                        <div class="hidden">
+                            <p>2019 - Present</p>
+                            <h5>
+                                Academic Degree
+                            </h5>
+                            <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
+                        </div>
+                    </div><br><br>
+                    <div class="ro">
+                        <div class="hidden">
+                            <i class="bi bi-mortarboard " style="color: #FF4C60; background-color: #ffffff;"></i>
+                        </div>
+                        <div class="hidden">
+                            <p>2019 - Present</p>
+                            <h5>
+                                Academic Degree
+                            </h5>
+                            <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
+                        </div>
+                    </div>
+                    <div class=" line"></div>
                 </div>
-                <div class="col-3 card-1">
-                    <button class="btn">Learn More</button>
+
+                <div class="box">
+
+                    <div class="ro">
+                        <div class="hidden">
+                            <i class="bi bi-mortarboard" style="color: #FF4C60;"></i>
+                        </div>
+                        <div class="hidden">
+                            <p>2019 - Present</p>
+                            <h5>
+                                Academic Degree
+                            </h5>
+                            <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
+                        </div>
+                    </div><br><br>
+                    <div class="ro">
+                        <div class="hidden">
+                            <i class="bi bi-mortarboard" style="color: #FF4C60;"></i>
+                        </div>
+                        <div class="hidden">
+                            <p>2019 - Present</p>
+                            <h5>
+                                Academic Degree
+
+                            </h5>
+                            <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
+                        </div>
+                    </div><br> <br>
+                    <div class="ro">
+                        <div class="hidden">
+                            <i class="bi bi-mortarboard" style="color: #FF4C60;"></i>
+                        </div>
+                        <div class="hidden ">
+                            <p>2019 - Present</p>
+                            <h5>
+                                Academic Degree
+
+                            </h5>
+                            <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
+                        </div>
+                    </div>
+                    <div class=" line"></div>
                 </div>
-                <div class="col-3 card-1">
-                    <button class="btn">Learn More</button>
+            </div>
+        </div>
+    </section>
+    <!-- project flex goes here -->
+    <section class="section-padding about-page">
+        <div class="container con">
+            <h1 class="about-text hidden">Project Work</h1><br><br>
+            <div class="pcon">
+                <div class="pbox hidden-right ">
+                    <img src="hand-drawn-business-planning_52683-76248.avif" alt="" class="img-fluid pimg">
+                </div>
+                <div class="pbox hidden-right sc2">
+                    <img src="hand-drawn-business-planning_52683-76248.avif" alt="" class="img-fluid pimg">
+                </div>
+                <div class="pbox hidden-right sc3">
+                    <img src="hand-drawn-business-planning_52683-76248.avif" alt="" class="img-fluid pimg">
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- get in touch goes here -->
 
+    <section class="section-padding about-page">
+        <div class="container  con">
+            <h1 class="about-text hidden-font">Get In Touch</h1><br><br>
 
+            <div class="row">
+                <div class="col-4">
+                    <h3 class="hidden hidden-right hello-text">Lets Talk about everything</h3>
+                </div>
+                <div class="col-8  ">
+                    <div class="int hidden-right hello-text2">
+                        <div class="int1 pb-3">
+                            <input class="i1" type="text" name="Your name" placeholder="Your name">
+                            <input class="i1" type="text" name="Your name" placeholder="Your email">
+                        </div>
+                        <div class="int2 pb-3">
+                            <input class="i3" type="text" name="Your name" placeholder="Subject">
+                        </div>
+                        <div class="int3">
+                            <input class="i4" type="text" name="Your name" placeholder="Message">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- footer goes here -->
+
+    <section class="section-padding about-page">
+        <div class="container-fluid bg-dark text-center text-light p-4">@shimanta</div>
+    </section>
+ <script src="app.js"></script>
 </body>
-
-</html>
